@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Demo</title>
+</head>
+
+<body>
+<p>this is a paragraph</p>
+<br />
+<hr />
+<pre>This text is preformatted</pre>
+<br />
+<em>This text is emphasized</em><br />
+<strong>This text is strong</strong><br />
+<code>This is some computer code</code><br />
+<b>This text is bold</b><br />
+<i>This text is italic</i><br />
+
+<ul>
+  <li>Fisrt item</li>
+  <li>Next item</li>
+</ul>
+<br />
+
+<ol>
+  <li>First item</li>
+  <li>Next item</li>
+</ol>
+
+<dl>
+  <dt>First item</dt>
+    <dd>Definition</dd>
+  <dt>Next item</dt>
+    <dd>Definition</dd>
+</dl>
+
+<table border="1">
+<tr>
+  <th>Someheader</th>
+  <th>Someheader</th>
+</tr>
+<tr>
+  <td>Sometext</td>
+  <td>Sometext</td>
+</tr>
+</table>
+
+<form action="action_page.php">
+  <fieldset>
+	<legend>Personal information:</legend>
+	  User name:<br>
+		<input type="text" name="username" maxlength="8" required><br>
+	  User password:<br>
+		<input type="password" name="psw"><br>
+	  E-mail:<br>
+		<input type="email" name="email" placeholder="abc@abc.com" required /><br>
+	  First name:<br>
+		<input type="text" name="firstname" required /><br>
+	  Last name:<br>
+		<input type="text" name="lastname" required /><br>
+	  Country Code:<br>
+	    <input type="text" name="country_code" pattern="[A-z]{3}" title="三个字母的国家代码" required /><br>
+	  University:<br>
+		<input type="text" name="university" value="清华大学" disabled><br>
+	  Major:<br>
+		<input type="text" name="major" value="Economics" readonly><br>
+	  Sex:<br>
+		<input type="radio" name="sex" value="male" checked>Male<br>
+		<input type="radio" name="sex" value="female">Female<br>
+	  Birthday:<br>
+		<input type="date" name="bday"><br>
+	  Telephone:<br>
+		<input type="tl" name="usrphone" value="+86 138-8888-8888"><br>
+	  Blog:<br>
+		<input type="url" name="blog"><br>
+	  Mobile Phone:<br>
+	    <input list="phones">
+	    <datalist id="phones">
+		  <option value="iPhone">
+		  <option value="Samsung">
+		  <option value="Huawei">
+		  <option value="Xiaomi">
+		  <option value="OPPO">
+		  <option value="Vivo">
+	    </datalist><br>
+	  City:<br>
+		<select name="cities">
+		  <option value="beijing">Beijing</option>
+		  <option value="shanghai">Shanghai</option>
+		  <option value="chengdu" selected>Chengdu</option>
+		  <option value="chongqing">Chongqing</option>
+		</select><br>
+	  Hobby:<br>
+		<input type="checkbox" name="hobby" value="sports">paly sports<br>
+		<input type="checkbox" name="hobby" value="home">stay at home<br>
+		<input type="checkbox" name="hobby" value="shop">go shopping<br>
+		<input type="checkbox" name="hobby" value="tv">watch tv<br>
+	  Color(Select your favorite color):<br>
+		<input type="color" name="favcolor" value="#ffffff"><br>
+	  Upload one or more image:<br>
+	    <input type="file" name="img" multiple="multiple" /><br>
+	  GPA(between one and four):<br>
+		<input type="number" name="grades" min="1" max="4"><br>
+	  Progress:<br>
+		<input type="range" name="pgs" min="0" max="100"><br>
+	  Work Time:<br>
+		<input type="month" name="wktime"><br>
+	  Week Plan:<br>
+		<input type="week" name="wkplan"><br>
+	  Free Time:<br>
+		<input type="time" name="ftime"><br>
+	  Meet Time:<br>
+		<input type="datetime-local" name="mtime"><br>
+	  Search:<br>
+		<input type="search" name="google"><br><br>
+	  <input type="submit" value="Submit">
+	</fieldset>
+</form>
+
+<br>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+<button type="button" onclick="alert('Hello World!')">Click me!</button>
+<br>
+
+
+
+
+
+	
+</body>
+</html>

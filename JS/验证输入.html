@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+<body>
+<h1>This is my first JavaScript</h1>
+<p>Please Enter numbers. If the value 
+is not number, message-box</p>
+<input id="demo" type="text">
+<script>
+function myFunction()
+{
+var x=document.getElementById("demo").value;
+if(x==""||isNaN(x))
+  {
+  alert("Not numeric");
+  }
+}
+</script>
+<button type="button" onclick="myFunction()">Click</button>
+</body>
+</html>
